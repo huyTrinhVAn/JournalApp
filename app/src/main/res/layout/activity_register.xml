@@ -12,15 +12,15 @@
         android:id="@+id/ET1_AR_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="72dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ET2_AR" />
+        app:layout_constraintTop_toBottomOf="@+id/ET2_AR_Username" />
 
     <EditText
         android:id="@+id/ET2_AR_Username"
@@ -38,15 +38,16 @@
         android:id="@+id/ACT1_AR_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="104dp"
         android:hint="Email"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -58,16 +59,15 @@
 
     <Button
         android:id="@+id/BT1_AR_signUp"
-        android:text="Sign Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ET2_AR"
+        android:layout_marginTop="92dp"
         android:backgroundTint="#5B81BA"
-        android:textColor="@color/black"/>
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_AR_password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
