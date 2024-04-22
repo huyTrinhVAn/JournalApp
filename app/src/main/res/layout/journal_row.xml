@@ -62,6 +62,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/TV3_JR_timestamp_list"
                 android:text="Date Created"
-                android:textStyle="italic"/>
+                android:textStyle="italic"
+                android:padding="10dp"
+                />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
