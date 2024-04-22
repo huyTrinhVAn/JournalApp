@@ -5,15 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/ET1_MA_Password"
+        android:layout_width="367dp"
+        android:layout_height="51dp"
+        android:layout_margin="20dp"
+        android:hint="Password"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ACTV_MA_Email"
+        android:layout_width="368dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Email"
+        app:layout_constraintBottom_toTopOf="@+id/ET1_MA_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/TV1_MA_Welcome"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Welcome to journal app"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/ACTV_MA_Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BT1_MA_Signin"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:text="Sign in"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_MA_Password" />
+
+    <Button
+        android:id="@+id/BT2_MA_Register"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+
+        android:layout_marginTop="48dp"
+        android:text="Register"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BT1_MA_Signin" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
